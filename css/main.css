@@ -553,7 +553,7 @@ button:focus {
 .navbar-expand-md .navbar-nav .nav-link:focus,
 .navbar-expand-md .navbar-nav .nav-link:hover,
 .navbar-expand-md .navbar-nav .nav-link:hover:before {
-  color: #F97794;
+  color: #286ba5;
 }
 
 .navbar-expand-md .navbar-nav .active > .nav-link,
@@ -561,12 +561,12 @@ button:focus {
 .navbar-expand-md .navbar-nav .nav-link.active:before,
 .navbar-expand-md .navbar-nav .nav-link.open,
 .navbar-expand-md .navbar-nav .open > .nav-link {
-  color: #F97794;
+  color: #286ba5;
 }
 
 .navbar-expand-md .navbar-toggler {
-  background: #F97794;
-  border-radius: 0px;
+  background: #286ba5;
+  border-radius: 10px;
   margin: 5px;
   cursor: pointer;
   float: right;
@@ -597,8 +597,8 @@ button:focus {
 }
 
 .navbar-expand-md .navbar-toggler:active {
-  border: 1px solid #F97794;
-  color: #F97794;
+  border: 1px solid #286ba5;
+  color: #286ba5;
 }
 
 /* ==========================================================================
@@ -2389,3 +2389,70 @@ footer .menu li a:hover {
   font-size: 18px;
   margin-bottom: 0;
 }
+ /* pop-voer */
+
+ #pop-up{
+  z-index: 100;
+  position: relative;
+  top: 100px;
+  width: auto;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+#pop-up .container{
+  background-color: #f0e4d4;
+  padding:30px;
+  position: absolute;
+  top:50px;   
+  width:100%;
+  box-sizing:border-box;
+}
+#pop-up input{
+  padding: 10px;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+#pop-up button{
+  padding: 10px;
+  border: 0;
+  color: #fff;
+  background-color: #333;
+  margin-left: -5px;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+.cross{
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #555;
+  color: #ddd;
+  font-weight: bold;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  border-radius: 11px;
+
+
+}
+ /* ANIMATED POP-UP Style */
+
+#pop-up{
+  transform-origin: 10px 10px;
+  top: -300px;
+  animation: drop 1s ease forwards
+}
+@keyframes drop{
+  0%{opacity: 0;}
+  70%{ transform: translateY(650px);}
+  100%{transform: translateY(400px); opacity: 1;}
+}
+
+/* ANIMATED POP-UP Style */

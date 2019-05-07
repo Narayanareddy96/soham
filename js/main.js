@@ -3,6 +3,23 @@
   "use strict";
   
 
+  var navMain = $(".navbar-collapse"); // avoid dependency on #id
+  // "a:not([data-toggle])" - to avoid issues caused
+  // when you have dropdown inside navbar
+  navMain.on("click", "a:not([data-toggle])", null, function () {
+      navMain.collapse('hide');
+  });
+  $(".closecross").on("click",function(){
+    $("#pop-up").hide();
+  })
+// clock
+  $('#clock').countdown('2019/07/06', function(event) {
+    var $this = $(this).html(event.strftime(''
+      + '%m<span>months</span>%d<span>days</span>'
+      + '%H<span>hr</span>%M<span>min</span>%S<span>sec</span>'
+      ));
+  });
+
 /* 
    CounterUp
    ========================================================================== */
@@ -136,7 +153,7 @@
             if ($(window).scrollTop() > 200) {
                 $('.fixed-top').addClass('menu-bg');
             } else {
-                $('.fixed-top').removeClass('menu-bg');
+                $('.fixed-top').addClass('menu-bg');
             }
         });
 
