@@ -1369,7 +1369,7 @@ button:focus {
 }
 
 .featured-box .featured-content h4 {
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 500;
   margin-bottom: 10px;
   transition: all 0.4s ease-in-out;
