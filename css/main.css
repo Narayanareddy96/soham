@@ -526,6 +526,7 @@ button:focus {
   padding: 5px 0px;
   margin-left: 30px;
   position: relative;
+  text-transform: uppercase;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:before {
@@ -1378,9 +1379,9 @@ button:focus {
   -o-transition: all 0.4s ease-in-out;
 }
 
-.featured-box .featured-content p {
+/* .featured-box .featured-content p {
   font-size: 14px;
-}
+} */
 
 /* ==========================================================================
  Team Section
@@ -2396,7 +2397,7 @@ footer .menu li a:hover {
   position: relative;
   top: 100px;
   width: auto;
-  max-width: 500px;
+  max-width: 75%;
   margin: 0 auto;
   text-align: center;
 }
@@ -2407,6 +2408,7 @@ footer .menu li a:hover {
   top:50px;   
   width:100%;
   box-sizing:border-box;
+  min-height: 300px;
 }
 #pop-up input{
   padding: 10px;
@@ -2456,3 +2458,25 @@ footer .menu li a:hover {
 }
 
 /* ANIMATED POP-UP Style */
+
+@media (min-width: 1200px){
+  .container {
+    max-width: 1200px;
+    /* width: 100%; */
+ }
+
+.navbar-brand img {
+max-width: 170px;
+}
+.navbar-brand {
+  margin-left: -20px;
+}
+
+}
+
+p.ptextstyle{
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 40px;
+}
+
